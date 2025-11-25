@@ -30,10 +30,10 @@ app.use(express.static(path.join(__dirname, 'client/dist')));
 
 // Configurazione database SQL Server
 const dbConfig = {
-    user: 'emsreset',
-    password: 'E6QhqKUxHFXTbkB7eA8c9ya',
-    server: 'roghipsql01.vandewiele.local',
-    database: 'Employee',
+    user: 'slquser',
+    password: 'password',
+    server: 'slqserver',
+    database: 'database',
     port: 1434,
     options: {
         encrypt: false,
@@ -334,3 +334,4 @@ app.listen(PORT, () => {
 process.on('unhandledRejection', (err) => {
     console.error('❌ Errore non gestito:', err);
 });
+
